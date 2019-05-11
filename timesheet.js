@@ -22,7 +22,6 @@ var monthsWorked;
 var totalBilled;
 
 
-// "<tr></tr>"
 
 $("#submit").on('click', function(event) {
 
@@ -46,5 +45,30 @@ database.ref().push({
 database.ref().on("child_added", function (snapshot) {
     console.log(snapshot)
     console.log(snapshot.val())
+
+    function addEmp() {
+
+      var row = $('<tr>');
+      var tdname = $('<td id="name">');
+      var tdrole = $('<td id="role">');
+      var tdStart = $('<td id="startDate">');
+      var tdRate = $('<td id="monthlyRate">');
+      var tdMonths = $('<td id="monthsWorked">');
+      var tdTotal = $('<td id="totalBilled">');
+      $("tbody").append(row);
+      row.append(tdname);
+      row.append(tdrole);
+      row.append(tdStart);
+      row.append(tdRate);
+      row.append(tdMonths);
+      row.append(tdTotal);
+
+      $("#name").text(snapshot.val().name);
+      $("#role").text(snapshot.val().role);
+
+    
+    }
+    addEmp();
+    
 })
 
