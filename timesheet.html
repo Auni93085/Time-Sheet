@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Time Sheet</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Employee Data Management</h1>
+            <p class="lead">A comprehensive directory of employee billable hours</p>
+        </div>
+        <div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                        <th scope="col">Emp. Name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">Months Work</th>
+                        <th scope="col">Monthly Rate ($)</th>
+                        <th scope="col">Total Billed ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="emp"></tr>
+            </tbody>
+        </table>
+
+        </div>
+        <div>
+            <div class="card" style="width: 100%;">
+                <div class="card-header">
+                    Add Employee
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="empName">Employee Name</label>
+                        <input type="text" class="form-control" id="empName" aria-describedby="name" placeholder="Employee Name">
+                        <small id="name" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role</label>
+                        <input type="text" class="form-control" id="role" placeholder="role">
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" class="form-control" id="startDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="monthlyRate">Rate in USD</label>
+                        <input type="number" class="form-control" id="monthlyRate">
+                    </div>
+    
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
