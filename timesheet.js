@@ -65,7 +65,8 @@ database.ref().on("child_added", function (snapshot) {
 
       $("#name").text(snapshot.val().name);
       $("#role").text(snapshot.val().role);
-
+      $("#startDate").text(snapshot.val().startDate);
+      $("#monthlyRate").text(snapshot.val().monthlyRate);
     
     }
     addEmp();
