@@ -1,0 +1,36 @@
+body {
+    background-image: url("Time2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.table {
+    background-color: black;
+    color: white;
+}
+
+.form-group {
+    padding: 20px 20px 0px 20px;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.card-header {
+    border-bottom: white solid 1px;
+}
+
+#button {
+    background-color: yellow;
+    color: black
+}
